@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
 // import 'react-pro-sidebar/dist/css/styles.css';
-import { Box, IconButton, Typography, useTheme } from "@mui/material";
+import { Box, Icon, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import { tokens } from "../../theme.js";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined.js";
@@ -18,7 +18,7 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined.js";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined.js";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined.js";
 
-const Sidebar = () => {
+const SidebarMenu = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -34,7 +34,7 @@ const Sidebar = () => {
         "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important"
         },
-        "& pro-inner-item": {
+        "& .pro-inner-item": {
           padding: "5px 35px 5px 20px !important"
         },
         "& .pro-inner-item:hover": {
@@ -45,9 +45,40 @@ const Sidebar = () => {
         }
       }}
     >
+      <Sidebar>
+        <Menu>
+          <MenuItem>
+          
+      {isCollapsed && (
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          alignItems="center"
+          ml="15px"
+        >
+          <Typography variant="h3" color={colors.grey[100]}>
+            ADMINS
+          </Typography>
+          <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
+            <MenuOutlinedIcon />
+          </IconButton>
+        </Box>
+      )}
+          </MenuItem>
+
+          {/* USER */}
+          {!isCollapsed && (
+            <Box>
+              <Box>
+                <img />
+              </Box>
+            </Box>
+          )}
+        </Menu>
+      </Sidebar>
 
     </Box>
   )
 }
 
-export default Sidebar;
+export default SidebarMenu;
