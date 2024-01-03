@@ -59,7 +59,7 @@ const SidebarMenu = () => {
             }}
           >
           
-      {isCollapsed && (
+      {!isCollapsed && (
         <Box
           display="flex"
           justifyContent="space-between"
