@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
-// import 'react-pro-sidebar/dist/css/styles.css';
+import { ProSidebar, Menu, MenuItem } from 'react-pro-sidebar';
+import 'react-pro-sidebar/dist/css/styles.css';
 import { Box, Icon, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import { tokens } from "../../theme.js";
@@ -48,7 +48,7 @@ const SidebarMenu = () => {
       
 
 
-      <Sidebar collapsed={isCollapsed}>
+      <ProSidebar collapsed={isCollapsed}>
         <Menu iconShape="square">
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
@@ -84,8 +84,8 @@ const SidebarMenu = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/user.png`}
-                  style={{cursor: "pointer", borderRadius:"50%"}}
+                  src={`../assets/user.jpg`}
+                  style={{cursor: "pointer", borderRadius:"50%", objectFit: "cover"}}
                 />
               </Box>
 
@@ -103,7 +103,7 @@ const SidebarMenu = () => {
             </Box>
           )}
         </Menu>
-      </Sidebar>
+      </ProSidebar>
 
     </Box>
   )
