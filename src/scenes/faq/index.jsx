@@ -23,7 +23,7 @@ const FAQ = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            "Parallel universes may exist, where you're a ruler of galaxies, dancing with alternate selves in surreal cosmic realms."
+            Parallel universes may exist, where you're a ruler of galaxies, dancing with alternate selves in surreal cosmic realms.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -36,7 +36,7 @@ const FAQ = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            "Parallel universes may exist, where you're a ruler of galaxies, dancing with alternate selves in surreal cosmic realms."
+            Time travel paradox: If you went back in time and prevented your own birth, how could you have traveled back?
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -49,7 +49,7 @@ const FAQ = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            "Parallel universes may exist, where you're a ruler of galaxies, dancing with alternate selves in surreal cosmic realms."
+            Time is an illusion. The present is constantly becoming the past, and the future already exists in another dimension.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -62,7 +62,7 @@ const FAQ = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            "Parallel universes may exist, where you're a ruler of galaxies, dancing with alternate selves in surreal cosmic realms."
+            Quantum entanglement allows particles to instantaneously affect each other, regardless of distance, defying classical notions of space and time.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -75,7 +75,7 @@ const FAQ = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            "Parallel universes may exist, where you're a ruler of galaxies, dancing with alternate selves in surreal cosmic realms."
+            "In an alternate reality, sentient marshmallows rule a candy kingdom, where gummy bears serve as diplomats, and lollipops are currency."
           </Typography>
         </AccordionDetails>
       </Accordion>
