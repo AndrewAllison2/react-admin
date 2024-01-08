@@ -144,7 +144,7 @@ const Dashboard = () => {
               <Typography variant="h5" fontWeight='600' color={colors.grey[100]}>
                 Revenue Generated
               </Typography>
-              <Typography variant="h3" fontWeight='500' color={colors.greenAccent[500]}>
+              <Typography variant="h3" fontWeight='bold' color={colors.greenAccent[500]}>
                 $59,342.32
               </Typography>
             </Box>
@@ -158,7 +158,7 @@ const Dashboard = () => {
             </Box>
           </Box>
 
-          <Box height='250px' ml='-20px'>
+          <Box height='250px' mt='-20px'>
             <LineChart isDashboard={true} />
           </Box>
           </Box>
@@ -209,8 +209,37 @@ const Dashboard = () => {
                 </Box>
               </Box>
             ))}
-          
+        </Box>
+        
+        {/* ROW 3 */}
+        <Box
+          gridColumn='span 4'
+          gridRow='span 2'
+          backgroundColor={colors.primary[400]}
+          p='30px'
+        >
+          <Typography variant="h5" fontWeight='600'>
+            Campaign
+          </Typography>
+          <Box
+            display='flex'
+            flexDirection='column'
+            alignItems='center'
+            mt='25px'
+          >
+            <ProgressCircle size='125' />
+            <Typography
+              color={colors.greenAccent[500]}
+              variant="h5"
+              sx={{ mt: '15px' }}
+            >
+              $48,352 revenue generated
+            </Typography>
+            <Typography variant="h5" fontWeight='600'>
+            Includes extra misc expenditures and costs
+          </Typography>
           </Box>
+        </Box>
 
         
       </Box>
