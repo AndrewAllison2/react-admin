@@ -161,6 +161,7 @@ const Dashboard = () => {
           <Box height='250px' ml='-20px'>
             <LineChart isDashboard={true} />
           </Box>
+          </Box>
 
           {/* TRANSACTIONS */}
           
@@ -211,7 +212,7 @@ const Dashboard = () => {
           
           </Box>
 
-        </Box>
+        
       </Box>
   </Box>
   )
