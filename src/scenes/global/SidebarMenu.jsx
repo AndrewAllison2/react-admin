@@ -100,7 +100,7 @@ const SidebarMenu = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../assets/user.jpg`}
+                  src='https://cdn1.iconfinder.com/data/icons/marketing-19/100/Profile-512.png'
                   style={{cursor: "pointer", borderRadius:"50%", objectFit: "cover"}}
                 />
               </Box>
