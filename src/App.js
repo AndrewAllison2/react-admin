@@ -15,6 +15,8 @@ import Bar from "./scenes/bar";
 import Pie from "./scenes/pie";
 import Line from "./scenes/line";
 import Geography from "./scenes/geography";
+// ignore coment here 
+
 
 function App() {
   const [theme, colorMode] = useMode();
